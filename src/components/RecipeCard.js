@@ -10,7 +10,7 @@ import Grid from "@mui/joy/Grid";
 import { collection, onSnapshot, doc, deleteDoc } from "firebase/firestore";
 
 const element = <FontAwesomeIcon icon={faTrash} />;
-const Recipecard = ({ recipe }) => {
+const RecipeCard = ({ recipe }) => {
   const recipesFetchRef = collection(db, "recipes");
   const [recipes, setRecipes] = useState([]);
   let { id } = useParams();
@@ -31,7 +31,7 @@ const Recipecard = ({ recipe }) => {
     deleteDoc(doc(db, "recipes", id));
   };
   return (
-    <div>
+    <>
       {/* <div className="grid"> */}
 
       {/* <div className="card-container "> */}
@@ -57,8 +57,8 @@ const Recipecard = ({ recipe }) => {
       {/* </div> */}
 
       {/* </div> */}
-    </div>
+    </>
   );
 };
 
-export default Recipecard;
+export default RecipeCard;

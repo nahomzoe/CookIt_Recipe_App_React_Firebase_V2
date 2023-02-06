@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { collection, onSnapshot } from "firebase/firestore";
 import Grid from "@mui/joy/Grid";
 import Divider from "@mui/joy/Divider";
-import Recipecard from "./RecipeCard";
+import RecipeCard from "./RecipeCard";
 
 const AllRecipes = () => {
   const recipesFetchRef = collection(db, "recipes");
@@ -48,7 +48,7 @@ const AllRecipes = () => {
         />
       </form>
       {/* <div className="cardGrid"> */}
-      <Grid container spacing={1} sx={{ flexGrow: 1, ml: 6 }}>
+      <Grid container spacing={2} sx={{ flexGrow: 1, ml: 6 }}>
         {recipes &&
           recipes
             .filter((recipe) => {
@@ -66,14 +66,12 @@ const AllRecipes = () => {
             .map((recipe) => {
               return (
                 <Grid container xs={3} sx={{ flexGrow: 1 }}>
-                  <Grid sx={{ ml: 4 }}>
-                    <Recipecard key={recipe.id} recipe={recipe} />
-                    <Divider
-                      orientation="vertical"
-                      flexItem
-                      sx={{ mr: "-1px" }}
-                    />
-                  </Grid>
+                  <RecipeCard key={recipe.id} recipe={recipe} />
+                  <Divider
+                    orientation="vertical"
+                    flexItem
+                    sx={{ mr: "-1px" }}
+                  />
                 </Grid>
               );
             })}

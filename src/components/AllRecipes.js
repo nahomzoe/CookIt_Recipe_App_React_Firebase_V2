@@ -65,8 +65,10 @@ const AllRecipes = () => {
             })
             .map((recipe) => {
               return (
-                <Grid xs={3}>
-                  <Recipecard key={recipe.id} recipe={recipe} />
+                <Grid container xs={3} sx={{ flexGrow: 1 }}>
+                  <Grid>
+                    <Recipecard key={recipe.id} recipe={recipe} />
+                  </Grid>
                 </Grid>
               );
             })}

@@ -238,7 +238,7 @@ input[type="submit"]:hover {
   margin: 0rem;
   height: 400px;
   width: 320px;
-  position: relative;
+
   transform-style: preserve-3d;
   perspective: 1000px;
   z-index: 2;

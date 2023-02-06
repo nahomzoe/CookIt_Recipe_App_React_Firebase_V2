@@ -171,12 +171,12 @@ input[type="submit"]:hover {
 .outshell {
   display: flex;
   justify-content: center;
-  min-height: 60rem;
+  min-height: 30rem;
 }
 .container {
   border-radius: 5px;
   background-color: #ffffff;
-  padding: 0 25rem 10rem 25rem;
+  padding: 0 1rem 10rem 1rem;
 
   background-color: whitesmoke;
 }
@@ -307,7 +307,7 @@ input[type="submit"]:hover {
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin: 1rem 10rem 5rem 10rem;
-  margin-bottom: 10rem;
+  margin-bottom: 2rem;
 }
 
 .single-wrapper {

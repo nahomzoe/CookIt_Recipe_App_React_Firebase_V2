@@ -48,7 +48,7 @@ const AllRecipes = () => {
         />
       </form>
       {/* <div className="cardGrid"> */}
-      <Grid container spacing={4} sx={{ flexGrow: 1, ml: 8 }}>
+      <Grid container spacing={1} sx={{ flexGrow: 1, ml: 4 }}>
         {recipes &&
           recipes
             .filter((recipe) => {

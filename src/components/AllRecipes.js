@@ -64,7 +64,11 @@ const AllRecipes = () => {
               }
             })
             .map((recipe) => {
-              return <Recipecard key={recipe.id} recipe={recipe} />;
+              return (
+                <Grid xs={3}>
+                  <Recipecard key={recipe.id} recipe={recipe} />
+                </Grid>
+              );
             })}
       </Grid>
       {/* </div> */}

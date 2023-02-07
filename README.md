@@ -24,7 +24,7 @@ Built with:
 
     I kindly ask,  when you test the remove button please delete the one that you added not the one already been added. Just to do not empty the database so others can start with some list of recipes when they want to test.
 
-    - https://cookit-recipe-react-app.herokuapp.com/
+    - https://cook-it-app-v2.vercel.app/
 
 # Screenshot
 

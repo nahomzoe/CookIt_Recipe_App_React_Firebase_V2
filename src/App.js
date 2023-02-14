@@ -6,6 +6,7 @@ import SingleRecipe from "./components/SingleRecipe";
 import Layout from "./UI components/Layout";
 import Home from "./UI components/Home";
 import AddRecipe from "./components/AddRecipe";
+import FormModal from "./components/FormModal";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="allrecipes" element={<AllRecipes />} />
           <Route path="allrecipes/:id" element={<SingleRecipe />} />
           <Route path="addrecipe" element={<AddRecipe />} />
+          {/* <Route path="form" element={<FormModal />} /> */}
         </Route>
       </Routes>
     </Router>

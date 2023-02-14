@@ -36,10 +36,10 @@ export default function Home() {
               columns={{ xs: 2, sm: 17, md: 16 }}
               margin={"auto"}
             >
-              <Grid xs={8} style={{ margin: "auto" }}>
+              <Grid xs={8} sx={{ margin: "auto", paddingBottom: 4 }}>
                 <div className="card">
-                  <p>Browse recipes</p>
-                  <Link className="card-link" to="/allrecipes">
+                  <p style={{ marginBottom: "-4px" }}>Browse recipes</p>
+                  <Link className="card-link" to="/allrecipes" style={{}}>
                     See more
                   </Link>
                 </div>
@@ -47,7 +47,7 @@ export default function Home() {
 
               <Grid xs={8}>
                 <div className="card1">
-                  <p>Add recipe</p>
+                  <p style={{ marginBottom: "-4px" }}>Add recipe</p>
                   <Link className="card-link" to="/addrecipe">
                     See more
                   </Link>

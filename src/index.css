@@ -240,7 +240,7 @@ input[type="submit"]:hover {
 
   transform-style: preserve-3d;
   perspective: 1000px;
-  z-index: 2;
+  z-index: 50;
 }
 
 .wrapper .card {
@@ -312,7 +312,7 @@ input[type="submit"]:hover {
 .single-wrapper {
   margin: 0rem;
   height: 30rem;
-  width: 25rem;
+  width: 400px;
   position: relative;
   z-index: 2;
 }

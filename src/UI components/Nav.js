@@ -15,6 +15,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Main from "./Main";
+import FormModal from "../components/FormModal";
 
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Project", "Testimonials", "Contact"];
@@ -45,8 +46,11 @@ function Header(props) {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton href="/addrecipe" sx={{ textAlign: "center" }}>
-            <ListItemText primary=" Add new recipe" />
+          <ListItemButton
+            href="#"
+            sx={{ textAlign: "center", bgcolor: "black" }}
+          >
+            <ListItemText primary={<FormModal />} />
           </ListItemButton>
         </ListItem>
       </List>
@@ -74,22 +78,30 @@ function Header(props) {
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            fontFamily="Montserrat Alternates"
           >
             cookIT
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Button href="/" sx={{ color: "#fff" }}>
-              Home
+              <Typography variant="h7" fontFamily="Montserrat Alternates">
+                {" "}
+                Home
+              </Typography>
             </Button>
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Button href="/allrecipes" sx={{ color: "#fff" }}>
-              Recipes
+              <Typography variant="h7" fontFamily="Montserrat Alternates">
+                {" "}
+                Recipes
+              </Typography>
             </Button>
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            <Button href="/addrecipe" sx={{ color: "#fff" }}>
-              Add new recipe
+            <Button href="#" sx={{ color: "#fff" }}>
+              {/* Add new recipe */}
+              <FormModal />
             </Button>
           </Box>
         </Toolbar>

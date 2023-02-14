@@ -38,7 +38,7 @@ export default function Home() {
             >
               <Grid xs={8} sx={{ margin: "auto", paddingBottom: 4 }}>
                 <div className="card">
-                  <p style={{ marginBottom: "-4px" }}>Browse recipes</p>
+                  <p style={{ marginBottom: "-6px" }}>Browse recipes</p>
                   <Link className="card-link" to="/allrecipes" style={{}}>
                     See more
                   </Link>
@@ -47,9 +47,15 @@ export default function Home() {
 
               <Grid xs={8}>
                 <div className="card1">
-                  <p style={{ marginBottom: "-4px" }}>Add recipe</p>
-                  <Link className="card-link" to="/addrecipe">
-                    See more
+                  <p style={{ marginBottom: "-6px" }}>
+                    Learn to control food waste{" "}
+                  </p>
+                  <Link
+                    className="card-link"
+                    to
+                    href="https://www.linkedin.com/newsletters/6931824078844538880/"
+                  >
+                    Click here
                   </Link>
                 </div>
               </Grid>

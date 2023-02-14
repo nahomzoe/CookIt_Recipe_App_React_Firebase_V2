@@ -6,6 +6,8 @@ import { collection, onSnapshot } from "firebase/firestore";
 import Grid from "@mui/joy/Grid";
 import Divider from "@mui/joy/Divider";
 import RecipeCard from "./RecipeCard";
+import TextField from "@mui/material/TextField";
+import Box from "@mui/material/Box";
 
 const AllRecipes = () => {
   const recipesFetchRef = collection(db, "recipes");
@@ -34,10 +36,13 @@ const AllRecipes = () => {
   };
 
   return (
-    <div>
-      <h4>Search for recipe</h4>
+    <>
+      {/* <h4>Search for recipe</h4> */}
+      <Box sx={{ textAlign: "center", mt: 6 }}>
+        <TextField label="Search" sx={{ width: 300 }} onChange={search} />
+      </Box>
 
-      <form className="container-search">
+      {/* <form className="container-search">
         <input
           type="text"
           name="search"
@@ -46,9 +51,15 @@ const AllRecipes = () => {
           onChange={search}
           style={{ marginBottom: "3rem" }}
         />
-      </form>
+      </form> */}
       {/* <div className="cardGrid"> */}
-      <Grid container spacing={2} sx={{ flexGrow: 1, ml: 6 }}>
+      <Grid
+        // container spacing={2} sx={{ flexGrow: 1, ml: 6 }}
+        container
+        spacing={{ xs: 14, md: 10 }}
+        columns={{ xs: 2, sm: 12, md: 18, xl: 26 }}
+        margin={"auto"}
+      >
         {recipes &&
           recipes
             .filter((recipe) => {
@@ -65,19 +76,21 @@ const AllRecipes = () => {
             })
             .map((recipe) => {
               return (
-                <Grid container xs={3} sx={{ flexGrow: 1 }}>
+                // <Grid container xs={3} sx={{ flexGrow: 1 }}>
+                <>
                   <RecipeCard key={recipe.id} recipe={recipe} />
-                  <Divider
+                  {/* <Divider
                     orientation="vertical"
                     flexItem
                     sx={{ mr: "-1px" }}
-                  />
-                </Grid>
+                  /> */}
+                </>
+                // </Grid>
               );
             })}
       </Grid>
       {/* </div> */}
-    </div>
+    </>
   );
 };
 

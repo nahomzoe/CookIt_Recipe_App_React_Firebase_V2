@@ -31,10 +31,7 @@ const RecipeCard = ({ recipe }) => {
     deleteDoc(doc(db, "recipes", id));
   };
   return (
-    <>
-      {/* <div className="grid"> */}
-
-      {/* <div className="card-container "> */}
+    <Grid item xs={2} sm={4} md={4} sx={{ ml: 2 }}>
       <div className="wrapper">
         <div className="card front-face">
           <img src={recipe.imagelink} />
@@ -54,10 +51,7 @@ const RecipeCard = ({ recipe }) => {
           </Link>
         </div>
       </div>
-      {/* </div> */}
-
-      {/* </div> */}
-    </>
+    </Grid>
   );
 };
 

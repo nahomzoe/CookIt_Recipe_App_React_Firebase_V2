@@ -7,6 +7,7 @@ import video from "./header.mp4";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
 import Grid from "@mui/joy/Grid";
+import { Button } from "@mui/material";
 
 export default function Home() {
   return (
@@ -47,13 +48,11 @@ export default function Home() {
 
               <Grid xs={8}>
                 <div className="card1">
-                  <p style={{ marginBottom: "-6px" }}>
-                    Learn to control food waste{" "}
-                  </p>
+                  <p style={{ marginBottom: "-6px" }}>Add recipe </p>
                   <Link
                     className="card-link"
-                    to
-                    href="https://www.linkedin.com/newsletters/6931824078844538880/"
+                    to="/addrecipe"
+                    // href="https://www.linkedin.com/newsletters/6931824078844538880/"
                   >
                     Click here
                   </Link>

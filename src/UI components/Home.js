@@ -14,18 +14,29 @@ export default function Home() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="xl">
-        <Box sx={{ bgcolor: "transparent", pt: 10, pb: 53 }}>
+        <Box
+          sx={{
+            bgcolor: "transparent",
+
+            pt: 10,
+            pb: 16,
+            margin: "center",
+          }}
+        >
           <Typography
             variant="h1"
             component="h1"
-            sx={{ color: "white" }}
-            margin={"auto"}
-            paddingBottom={10}
+            // sx={{ color: "whitesmoke" }}
+            sx={{ float: "right" }}
+            // margin={"auto"}
+            paddingBottom={40}
             fontFamily="Montserrat Alternates"
+            fontWeight={500}
           >
             cookIT
           </Typography>
-          <div className="home">
+
+          <div className="home" style={{ marginTop: "15rem" }}>
             <Grid
               // container
               // spacing={2}
@@ -34,7 +45,7 @@ export default function Home() {
 
               container
               spacing={{ xs: 2, md: 2 }}
-              columns={{ xs: 2, sm: 17, md: 16 }}
+              columns={{ xs: 2, sm: 17, md: 32 }}
               margin={"auto"}
             >
               <Grid xs={8} sx={{ margin: "auto", paddingBottom: 4 }}>

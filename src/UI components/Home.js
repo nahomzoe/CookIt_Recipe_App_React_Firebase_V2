@@ -27,7 +27,7 @@ export default function Home() {
             variant="h1"
             component="h1"
             // sx={{ color: "whitesmoke" }}
-            sx={{ float: "right" }}
+            sx={{ float: "right", color: "#f5f5f5" }}
             // margin={"auto"}
             paddingBottom={40}
             fontFamily="Montserrat Alternates"

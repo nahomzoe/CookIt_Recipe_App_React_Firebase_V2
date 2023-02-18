@@ -13,6 +13,7 @@ Built with:
     - HTML
     - JS
     - CSS
+    - MUI
     - Bootstrap
     - Reactjs
     - Google cloud Firebase function

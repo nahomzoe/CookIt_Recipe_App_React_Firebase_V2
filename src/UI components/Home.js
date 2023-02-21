@@ -27,16 +27,16 @@ export default function Home() {
             variant="h1"
             component="h1"
             // sx={{ color: "whitesmoke" }}
-            sx={{ float: "right", color: "#f5f5f5" }}
+            sx={{ color: "#f5f5f5" }}
             // margin={"auto"}
-            paddingBottom={40}
+            // paddingBottom={0}
             fontFamily="Montserrat Alternates"
-            fontWeight={500}
+            fontWeight={800}
           >
             cookIT
           </Typography>
 
-          <div className="home" style={{ marginTop: "15rem" }}>
+          <div className="home" style={{ marginTop: "15%" }}>
             <Grid
               // container
               // spacing={2}

@@ -38,6 +38,6 @@ Built with:
 
 # Authors and acknowledgment
 
-    - Nahom Asfaw,
+    - Nahom Asfaw
 
     - https://www.linkedin.com/in/nahom-asfaw-6b78a6185/

@@ -1,10 +1,8 @@
 import React from "react";
-
 import { db } from "../firebase.config";
 import { useEffect, useState } from "react";
 import { collection, onSnapshot } from "firebase/firestore";
 import Grid from "@mui/joy/Grid";
-import Divider from "@mui/joy/Divider";
 import RecipeCard from "./RecipeCard";
 import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
@@ -22,11 +20,10 @@ const AllRecipes = () => {
             id: doc.id,
             viewing: false,
             ...doc.data(),
-            //title: doc.data().title.toUpperCase()
           };
         })
       );
-      //setRecipes(recipes);
+
       console.log(snapshot);
     });
   }, []);
@@ -37,24 +34,11 @@ const AllRecipes = () => {
 
   return (
     <>
-      {/* <h4>Search for recipe</h4> */}
       <Box sx={{ textAlign: "center", mt: 6 }}>
         <TextField label="Search" sx={{ width: 300 }} onChange={search} />
       </Box>
 
-      {/* <form className="container-search">
-        <input
-          type="text"
-          name="search"
-          placeholder="Search.."
-          className="search"
-          onChange={search}
-          style={{ marginBottom: "3rem" }}
-        />
-      </form> */}
-      {/* <div className="cardGrid"> */}
       <Grid
-        // container spacing={2} sx={{ flexGrow: 1, ml: 6 }}
         container
         spacing={{ xs: 14, md: 10 }}
         columns={{ xs: 2, sm: 12, md: 18, xl: 26 }}
@@ -76,20 +60,12 @@ const AllRecipes = () => {
             })
             .map((recipe) => {
               return (
-                // <Grid container xs={3} sx={{ flexGrow: 1 }}>
                 <>
                   <RecipeCard key={recipe.id} recipe={recipe} />
-                  {/* <Divider
-                    orientation="vertical"
-                    flexItem
-                    sx={{ mr: "-1px" }}
-                  /> */}
                 </>
-                // </Grid>
               );
             })}
       </Grid>
-      {/* </div> */}
     </>
   );
 };

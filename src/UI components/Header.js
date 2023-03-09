@@ -5,9 +5,6 @@ const Header = () => {
   return (
     <header>
       <div className="header">
-        {/* <div>
-          <h2>CookIT</h2>
-        </div>*/}
         <Nav />
       </div>
     </header>

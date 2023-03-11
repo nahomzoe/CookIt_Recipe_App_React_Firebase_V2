@@ -4,7 +4,7 @@
 
 # Description
 
-    This is a basic food recipe app made with react and connected to cloud database. It enables users to add, and delete thier own recipes so they can share recipes of each others.
+Our food recipe app is built using React and connected to a cloud-based database. With this app, users can easily add and delete their own recipes, making it simple to share and discover new recipe ideas from other users.
 
 # Technologies used
 
